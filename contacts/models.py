@@ -10,6 +10,7 @@ class Contact(models.Model):
 
     name = models.CharField(max_length=255)
     email = models.EmailField(null=True, blank=True)
+    birthday = models.DateField(null=True, blank=True)
     phone_number = models.CharField(max_length=11,
                                     validators=[phone_regex],
                                     null=True,
